@@ -3,8 +3,8 @@
 #no stripping required either
 %global __os_install_post %{nil}
 
-%global snap_date       20200419
-%global commit_long     84523e0b9a9e78aa69fca1f1a8d75b2bdb5155fc
+%global snap_date       20200507
+%global commit_long     20354bebcc2a8448128f2348e19e155910d25122
 %global commit_short    %(c=%{commit_long}; echo ${c:0:7})
 
 Name:          bcm283x-firmware
