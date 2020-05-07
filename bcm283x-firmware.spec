@@ -61,6 +61,10 @@ install -p * %{buildroot}%{efi_esp_root}
 
 
 %changelog
+* Thu May 07 2020 Vaughan <devel at agrez dot net> - 20200507-1.20354be
+- Sync to latest git commit:20354bebcc2a8448128f2348e19e155910d25122
+- Use %%{efi_esp_root} variables
+
 * Sun Apr 19 2020 Vaughan <devel at agrez dot net> - 20200419-1.84523e0
 - Install firmware to /boot/efi
 - Sync to latest git commit: 84523e0b9a9e78aa69fca1f1a8d75b2bdb5155fc
