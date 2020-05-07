@@ -51,13 +51,13 @@ cp -a %{sources} .
 
 
 %install
-mkdir -p %{buildroot}/boot/efi
-install -p * %{buildroot}/boot/efi
+mkdir -p %{buildroot}%{efi_esp_root}
+install -p * %{buildroot}%{efi_esp_root}
 
 
 %files
 %license LICENCE.broadcom COPYING.linux
-/boot/efi/*
+%{efi_esp_root}/*
 
 
 %changelog
