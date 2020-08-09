@@ -3,8 +3,8 @@
 #no stripping required either
 %global __os_install_post %{nil}
 
-%global snap_date       20200628
-%global commit_long     2b76cfc6f57d4943144b9ceb5b57d3d455d6a8fd
+%global snap_date       20200809
+%global commit_long     b571a3cfbb3198d445727f4a0057847fedce410b
 %global commit_short    %(c=%{commit_long}; echo ${c:0:7})
 
 Name:          bcm283x-firmware
@@ -61,6 +61,9 @@ install -p * %{buildroot}%{efi_esp_root}
 
 
 %changelog
+* Sun Aug 09 2020 Vaughan <devel at agrez dot net> - 20200809-1.b571a3c
+- Sync to latest git commit: b571a3cfbb3198d445727f4a0057847fedce410b
+
 * Sun Jun 28 2020 Vaughan <devel at agrez dot net> - 20200628-1.2b76cfc
 - Sync to latest git commit: 2b76cfc6f57d4943144b9ceb5b57d3d455d6a8fd
 
